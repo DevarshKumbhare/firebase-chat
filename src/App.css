@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+body{
+  background-color: black;
+  color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.google-click{
+  transform: scale(3);
+  margin: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  padding: 8px 9px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chatbox{
+  border-radius: 20px;
+  margin: 5px 0;
+  padding: 12px;
+  background-color: rgb(44, 0, 218);
+}
+.me .chatbox{
+  background-color: rgb(121, 31, 225);
+}
+
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2px;
+}
+.container.me{
+  flex-direction: row-reverse;
 }
 
-.App-link {
-  color: #61dafb;
+.btm{
+  position: fixed;
+  width: 100%;
+  bottom: 2px;
+  display: flex;
+  flex-direction: row;
+}
+.btm input{
+  padding: 15px;
+  flex-grow: 1;
+  border-radius: 20px;
+}
+.btm button{
+  border-radius: 25px;
+  width: 15%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.chat-container{
+  height: 83vh;
+  overflow-y:scroll;
+  border: 1px;
 }
